@@ -300,14 +300,18 @@ def app():
                     st.table(result_df)
 
                     missing_count = processed_df[processed_df['Priority (Name)'] != 'Cancelled']['Field012 (Custom)'].isnull().sum()
+                    columns_to_check = ['Workflow - Verified By', 'Workflow - Accepted By', 'Workflow - Closed By']
+                    missing_id = processed_df[processed_df[columns_to_check].apply(lambda x: x.str.contains('No Name Match')).any(axis=1)]['Comm ID'].unique()
+                    st.write("missing id for corresponding missing names :")
+                    st.table(missing_id)
                     st.write("Count of missing values in 'Field012 (Custom)' where 'Priority (Name)' is not 'Cancelled':", missing_count)
                     if show_download:
                         # Provide a download button for the user to download the Excel file
                         st.markdown(get_binary_file_downloader_html(output_file_path, file_name='processed_data.xlsx'), unsafe_allow_html=True)
                         st.write("***Programme Ended .......***")
+app()
                 
     
-
 
 
 
