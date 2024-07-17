@@ -76,17 +76,17 @@ def app():
             'PA': 'PNT', 'PIP': 'PIP', 'STR': 'STR', 'TC': 'TEL', 'HV': 'MEC', 'RF': 'REF'
         }
         lead_mapping = {
-            'BLD': 'Paglinawan, Cipriano/Chakravarty, Santanu/Kanikodan, Prakashan',
-            'CVL': 'Paglinawan, Cipriano/Chakravarty, Santanu/Kanikodan, Prakashan',
-            'ELE': 'Paglinawan, Cipriano/Chakravarty, Santanu/Khurshid, Karawan',
-            'CSE': 'Paglinawan, Cipriano/Chakravarty, Santanu/Khurshid, Karawan',
-            'TEL': 'Paglinawan, Cipriano/Chakravarty, Santanu/Khurshid, Karawan',
-            'PNT': 'Paglinawan, Cipriano/Chakravarty, Santanu/Anjum, Mohammad Muzamil',
-            'REF': 'Paglinawan, Cipriano/Chakravarty, Santanu/Anjum, Mohammad Muzamil',
-            'INS': 'Paglinawan, Cipriano/Chakravarty, Santanu/Anjum, Mohammad Muzamil',
-            'PIP': 'Paglinawan, Cipriano/Chakravarty, Santanu/Ali, Ahsan',
-            'STR': 'Paglinawan, Cipriano/Chakravarty, Santanu/Agbay, Cecilio Masagpag',
-            'MEC': 'Paglinawan, Cipriano/Chakravarty, Santanu/Brosoto, Joelito'
+            'BLD': 'Paglinawan, Cipriano/Gasang, Carla Joyzenia/Kanikodan, Prakashan',
+            'CVL': 'Paglinawan, Cipriano/Gasang, Carla Joyzenia/Kanikodan, Prakashan',
+            'ELE': 'Paglinawan, Cipriano/Gasang, Carla Joyzenia/Khurshid, Karawan',
+            'CSE': 'Paglinawan, Cipriano/Gasang, Carla Joyzenia/Khurshid, Karawan',
+            'TEL': 'Paglinawan, Cipriano/Gasang, Carla Joyzenia/Khurshid, Karawan',
+            'PNT': 'Paglinawan, Cipriano/Gasang, Carla Joyzenia/Anjum, Mohammad Muzamil',
+            'REF': 'Paglinawan, Cipriano/Gasang, Carla Joyzenia/Anjum, Mohammad Muzamil',
+            'INS': 'Paglinawan, Cipriano/Gasang, Carla Joyzenia/Anjum, Mohammad Muzamil',
+            'PIP': 'Paglinawan, Cipriano/Gasang, Carla Joyzenia/Ali, Ahsan',
+            'STR': 'Paglinawan, Cipriano/Gasang, Carla Joyzenia/Agbay, Cecilio Masagpag',
+            'MEC': 'Paglinawan, Cipriano/Gasang, Carla Joyzenia/Brosoto, Joelito'
         }
         
         df['Discipline'] = df['Discipline'].map(discipline_mapping)
