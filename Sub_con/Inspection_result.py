@@ -142,6 +142,9 @@ def app():
         # Columns to Rename
         columns_to_preprocess = ['Workflow - Verified By', 'Workflow - Accepted By', 'Workflow - Closed By']
         df_ccc[columns_to_preprocess] = df_ccc[columns_to_preprocess].apply(preprocess_column, mapping=mapping_dict)
+        filtered_comm_ids = df_ccc[df_ccc['Workflow - Verified By'] == 'No Name Match']['Comm ID']
+        st.write("Here are the Comm IDs with 'No Name Match':", len(filtered_comm_ids))  # Fixed parenthesis
+        st.write(filtered_comm_ids)
         #st.write("Task-9")
         # Task -9: Related to Priority Name
         options = [
