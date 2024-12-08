@@ -73,7 +73,7 @@ def app():
         # Mapping rules for 'Discipline' and 'Field009 (Custom)'
         discipline_mapping = {
             'AB': 'BLD', 'CVL': 'CVL', 'ELE': 'ELE', 'IN': 'CSE', 'IS': 'INS', 'MEC': 'MEC',
-            'PA': 'PNT', 'PIP': 'PIP', 'STR': 'STR', 'TC': 'TEL', 'HV': 'MEC', 'RF': 'REF'
+            'PA': 'PNT', 'PIP': 'PIP', 'STR': 'STR', 'TC': 'TEL', 'HV': 'MEC', 'RF': 'REF','FP':'FPE','WE':'PIP',
         }
         lead_mapping = {
             'BLD': 'Paglinawan, Cipriano/Gasang, Carla Joyzenia/Kanikodan, Prakashan',
@@ -84,6 +84,7 @@ def app():
             'PNT': 'Paglinawan, Cipriano/Gasang, Carla Joyzenia/Anjum, Mohammad Muzamil',
             'REF': 'Paglinawan, Cipriano/Gasang, Carla Joyzenia/Anjum, Mohammad Muzamil',
             'INS': 'Paglinawan, Cipriano/Gasang, Carla Joyzenia/Anjum, Mohammad Muzamil',
+            'FPE': 'Paglinawan, Cipriano/Gasang, Carla Joyzenia/Anjum, Mohammad Muzamil',
             'PIP': 'Paglinawan, Cipriano/Gasang, Carla Joyzenia/Ali, Ahsan',
             'STR': 'Paglinawan, Cipriano/Gasang, Carla Joyzenia/Agbay, Cecilio Masagpag',
             'MEC': 'Paglinawan, Cipriano/Gasang, Carla Joyzenia/Brosoto, Joelito'
