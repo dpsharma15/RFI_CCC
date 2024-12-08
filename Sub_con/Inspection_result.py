@@ -81,7 +81,7 @@ def app():
         discipline_mapping = {
             'AB': 'BLD', 'CVL': 'CVL', 'ELE': 'ELE', 'IN': 'CSE', 'IS': 'INS',
             'MEC': 'MEC', 'PA': 'PNT', 'PIP': 'PIP', 'STR': 'STR', 'TC': 'TEL',
-            'HV': 'MEC', 'RF': 'REF'
+            'HV': 'MEC', 'RF': 'REF','FP':'FPE'
         }
         df_ccc.loc[:, 'Discipline'] = df_ccc['Discipline'].map(discipline_mapping)
         #st.write("Task-3")
@@ -99,6 +99,7 @@ def app():
             'PNT': 'Anjum, Mohammad Muzamil',
             'REF': 'Anjum, Mohammad Muzamil',
             'INS': 'Anjum, Mohammad Muzamil',
+            'FPE': 'Anjum, Mohammad Muzamil',
             'PIP': 'Ali, Ahsan',
             'STR': 'Agbay, Cecilio Masagpag',
             'MEC': 'Brosoto, Joelito'
